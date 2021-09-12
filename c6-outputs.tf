@@ -15,7 +15,7 @@ output "for_output_map1" {
 # For loop with Map Advanced
 output "for_output_map2" {
   description = "For Loop with Map2"
-  value       = {for c,  in aws_instance.myec2vm: c => instance.public_dns}
+  value       = {for c, in aws_instance.myec2vm: c => instance.public_dns}
 }
 
 # Output with legacy splat operator
